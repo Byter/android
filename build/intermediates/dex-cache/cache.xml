@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="/home/master/Desktop/byter_work/Byter/droidbyter/build/intermediates/pre-dexed/debug/internal_impl-20.0.0-3b69246bdb91fb787fd89e8a56d50ee67eaa4e1f.jar"
+        jar="/home/master/Desktop/byter_work/Byter/droidbyter/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/libs/internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
+    <item
+        dex="/home/master/Desktop/byter_work/Byter/droidbyter/build/intermediates/pre-dexed/debug/support-annotations-20.0.0-9944cf3c3901aae99732726a53f1098f219ad018.jar"
+        jar="/home/master/android-sdks/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa"/>
+    <item
+        dex="/home/master/Desktop/byter_work/Byter/droidbyter/build/intermediates/pre-dexed/debug/classes-9e062d50bb14d943174ced32159e17294d69c7bf.jar"
+        jar="/home/master/Desktop/byter_work/Byter/droidbyter/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/classes.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>
+
+</pre-dex-items>

@@ -3,6 +3,7 @@ package com.visionarysoftwaresolutions.byter.android;
 import android.app.Activity;
 import android.app.ActionBar;
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -10,7 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
-
+import android.widget.Toast;
 
 
 public class Welcome extends Activity {
@@ -19,11 +20,6 @@ public class Welcome extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
-        if (savedInstanceState == null) {
-            getFragmentManager().beginTransaction()
-                    .add(R.id.container, new PlaceholderFragment())
-                    .commit();
-        }
     }
 
 
@@ -46,19 +42,28 @@ public class Welcome extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    /**
-     * A placeholder fragment containing a simple view.
-     */
-    public static class PlaceholderFragment extends Fragment {
+    public void dispatchToUpdateInfo(final View clicked) {
+        Intent updateInfo = new Intent(this, UpdateInfo.class);
+        startActivity(updateInfo);
+    }
 
-        public PlaceholderFragment() {
-        }
+    public void dispatchToLogMeal(final View clicked) {
+        final String message = "Clicked by" + clicked.getId();
+        Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
+    }
 
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_welcome, container, false);
-            return rootView;
-        }
+    public void dispatchToViewMeals(final View clicked) {
+        final String message = "Clicked by" + clicked.getId();
+        Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
+    }
+
+    public void dispatchToPlanMeals(final View clicked) {
+        final String message = "Clicked by" + clicked.getId();
+        Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
+    }
+
+    public void dispatchToMealGoals(final View clicked) {
+        final String message = "Clicked by" + clicked.getId();
+        Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
     }
 }

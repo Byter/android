@@ -1,7 +1,51 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Welcome"
-    tools:ignore="MergeRootFrame" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:gravity="center"
+              android:id="@+id/linearLayout">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/welcome"
+            android:id="@+id/textView"
+            android:textAlignment="center"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/updateInfo"
+            android:id="@+id/updateInfoButton"
+            android:clickable="true"
+            android:onClick="dispatchToUpdateInfo"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logMeal"
+            android:id="@+id/logMealButton"
+            android:onClick="dispatchToLogMeal"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/viewMeals"
+            android:id="@+id/viewMealButton"
+            android:onClick="dispatchToViewMeals"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/planMeal"
+            android:id="@+id/planMealButton"
+            android:onClick="dispatchToPlanMeals"/>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setMealGoals"
+            android:id="@+id/mealGoalsButton"
+            android:onClick="dispatchToMealGoals"/>
+</LinearLayout>

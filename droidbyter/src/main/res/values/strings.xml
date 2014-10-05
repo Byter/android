@@ -9,5 +9,7 @@
     <string name="viewMeals">View My Meals</string>
     <string name="planMeal">Plan A Meal</string>
     <string name="setMealGoals">Set Meal Goals</string>
+    <string name="title_activity_update_info">UpdateInfo</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>
