@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Byter</string>
+    <string name="action_settings">Settings</string>
+    <string name="welcome">Welcome Smacker!</string>
+    <string name="updateInfo">Set/Update My Info</string>
+    <string name="logMeal">Log a Meal</string>
+    <string name="viewMeals">View My Meals</string>
+    <string name="planMeal">Plan A Meal</string>
+    <string name="setMealGoals">Set Meal Goals</string>
+
+</resources>
